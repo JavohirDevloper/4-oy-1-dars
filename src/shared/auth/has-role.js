@@ -1,10 +1,12 @@
 const { ForbiddenError } = require("../errors");
 
-const hasRole = ({ req, res, next }, roles) => {
+const hasRole = (roles) => {
+  return (req, res, next) => {
   const { role } = req.user;
   if (!roles.includes(role)) {
-    throw new ForbiddenError("Ushbu yo'ldan kirish taqiqlangan!");
+    throw new ForbiddenError("Ruxast berilmagan!");
   }
+  // next();
 };
-
+}
 module.exports = hasRole;

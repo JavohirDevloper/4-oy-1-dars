@@ -30,7 +30,7 @@ exports.addUserSchema = {
     last_name: Joi.string().required().max(30).min(3),
     username: Joi.string().required().min(3).max(20),
     password: Joi.string().required().min(5).max(20),
-    role: Joi.string().required().valid("admin", "ofitsiant"),
+    role: Joi.string().required().valid("admin", "xizmatkor"),
   }),
 };
 
@@ -46,7 +46,7 @@ exports.updateUserSchema = {
     last_name: Joi.string().max(30).min(3),
     username: Joi.string().min(3).max(20),
     password: Joi.string().min(5).max(20),
-    role: Joi.string().valid("admin", "ofitsiant"),
+    role: Joi.string().valid("admin", "xizmatkor"),
   }),
   params: Joi.object({
     id: Joi.number().integer(),

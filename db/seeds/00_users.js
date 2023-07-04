@@ -26,9 +26,9 @@ exports.seed = async function (knex) {
     },
     {
       // id: 3,
-      first_name: 'Usmon',
-      last_name: 'Valiyev',
-      username: 'valiyev',
+      first_name: 'Javohir',
+      last_name: 'Muhammadiyev',
+      username: 'javohir',
       password: bcrypt.hashSync('foobar', 10),
       is_deleted: false,
     },

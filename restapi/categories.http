@@ -2,12 +2,12 @@ GET http://localhost:3000/categories?is_deleted=false
 
 
 ###
-GET http://localhost:3000/categories/4
+GET http://localhost:3000/categories/3
 
 ###
 POST http://localhost:3000/categories
 Content-Type: application/json
-Authorization:
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NiwiaWF0IjoxNjg4NDU5MDYwLCJleHAiOjE2ODg1NDU0NjB9.rfEuXp4ltgCXwo5mERBatNbBog39CZXDpDlmHeBU5ms
 
 {
   "name": "Salatlar"
@@ -16,7 +16,7 @@ Authorization:
 ###
 PATCH http://localhost:3000/categories/4
 Content-Type: application/json
-Authorization:
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NiwiaWF0IjoxNjg4NDU5MDYwLCJleHAiOjE2ODg1NDU0NjB9.rfEuXp4ltgCXwo5mERBatNbBog39CZXDpDlmHeBU5ms
 
 {
   "name": "Salatlar"
@@ -25,4 +25,4 @@ Authorization:
 ###
 DELETE http://localhost:3000/categories/3
 Content-Type: application/json
-Authorization:
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NiwiaWF0IjoxNjg4NDU5MDYwLCJleHAiOjE2ODg1NDU0NjB9.rfEuXp4ltgCXwo5mERBatNbBog39CZXDpDlmHeBU5ms

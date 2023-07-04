@@ -1,39 +1,39 @@
 GET http://localhost:3000/users?q=johndoe&is_deleted=true
 
 ###
-GET http://localhost:3000/users/9
+GET http://localhost:3000/users/6
 
 ###
 POST http://localhost:3000/users/login
 Content-Type: application/json
 
 { 
-  "username": "valiyev",
+  "username": "javohir",
   "password": "foobar"
 }
 
 ###
 POST http://localhost:3000/users/
 Content-Type: application/json
-Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiaWF0IjoxNjg4NDM5NDE5LCJleHAiOjE2ODg1MjU4MTl9.U77BAM1gpxLE9GqC6vR9aVO5SqWAf0Lfen_Cn6nXvoM
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NiwiaWF0IjoxNjg4NDU5MDYwLCJleHAiOjE2ODg1NDU0NjB9.rfEuXp4ltgCXwo5mERBatNbBog39CZXDpDlmHeBU5ms
 
-{ "first_name": "John",
-  "last_name": "Doe",
-  "username": "johndoe7",
-  "password": "joh333",
-  "role": "ofitsiant"
+{ "first_name": "Jorj",
+  "last_name": "Washington",
+  "username": "jorj",
+  "password": "jorj1234",
+  "role": "xizmatkor"
 }
 
 ###
-PATCH http://localhost:3000/users/9
+PATCH http://localhost:3000/users/1
 Content-Type: application/json
-Authorization: 
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NiwiaWF0IjoxNjg4NDU5MDYwLCJleHAiOjE2ODg1NDU0NjB9.rfEuXp4ltgCXwo5mERBatNbBog39CZXDpDlmHeBU5ms
 
-{ "first_name": "John1",
-  "last_name": "Doe1"
+{ "first_name": "Jorj1",
+  "last_name": "Washington1"
 }
 
 
 ###
-DELETE http://localhost:3000/users/10
-Authorization: 
+DELETE http://localhost:3000/users/4
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NiwiaWF0IjoxNjg4NDU5MDYwLCJleHAiOjE2ODg1NDU0NjB9.rfEuXp4ltgCXwo5mERBatNbBog39CZXDpDlmHeBU5ms
