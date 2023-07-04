@@ -1,0 +1,39 @@
+GET http://localhost:3000/users?q=johndoe&is_deleted=true
+
+###
+GET http://localhost:3000/users/9
+
+###
+POST http://localhost:3000/users/login
+Content-Type: application/json
+
+{ 
+  "username": "valiyev",
+  "password": "foobar"
+}
+
+###
+POST http://localhost:3000/users/
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiaWF0IjoxNjg4NDM5NDE5LCJleHAiOjE2ODg1MjU4MTl9.U77BAM1gpxLE9GqC6vR9aVO5SqWAf0Lfen_Cn6nXvoM
+
+{ "first_name": "John",
+  "last_name": "Doe",
+  "username": "johndoe7",
+  "password": "joh333",
+  "role": "ofitsiant"
+}
+
+###
+PATCH http://localhost:3000/users/9
+Content-Type: application/json
+Authorization: 
+
+{ "first_name": "John1",
+  "last_name": "Doe1"
+}
+
+
+###
+DELETE http://localhost:3000/users/10
+Authorization: 

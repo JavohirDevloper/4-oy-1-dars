@@ -6,8 +6,8 @@ const listUsers = async () => {
     'first_name',
     'last_name',
     'username',
-    'updated_at',
-    'created_at'
+    // 'updated_at',
+    // 'created_at'
   );
 
   const list = await dbQuery;

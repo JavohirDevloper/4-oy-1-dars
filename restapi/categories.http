@@ -1,0 +1,28 @@
+GET http://localhost:3000/categories?is_deleted=false
+
+
+###
+GET http://localhost:3000/categories/4
+
+###
+POST http://localhost:3000/categories
+Content-Type: application/json
+Authorization:
+
+{
+  "name": "Salatlar"
+}
+
+###
+PATCH http://localhost:3000/categories/4
+Content-Type: application/json
+Authorization:
+
+{
+  "name": "Salatlar"
+}
+
+###
+DELETE http://localhost:3000/categories/3
+Content-Type: application/json
+Authorization:
